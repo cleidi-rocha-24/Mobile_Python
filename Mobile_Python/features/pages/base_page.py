@@ -1,13 +1,8 @@
 from datetime import time
 import time
-import logging
 from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.appiumby import AppiumBy
 from selenium.webdriver.support.wait import WebDriverWait
-
-
-logging.basicConfig(filename='reports/report.log', level=logging.INFO, format='%(asctime)s - %(message)s')
-
 
 
 class BasePage:
@@ -24,9 +19,7 @@ class BasePage:
             elif locator_type.lower() == "text":
                 element = self.driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR,
                                                    f'new UiSelector().text("{locator}")')
-            # logger.info(f"Elemento encontrado - Tipo: {locator_type}, Locator: {locator}")
         except Exception as e:
-            # logger.error(f"Erro ao encontrar elemento - Tipo: {locator_type}, Locator: {locator}")
             raise e
         return element
 
@@ -42,7 +35,6 @@ class BasePage:
             raise e
 
     def clicar(self, locator_type, locator):
-        # logger.info(f"Clicando no elemento - Tipo: {locator_type}, Locator: {locator}")
         self.procura_elemento(locator_type, locator).click()
 
     def digitar(self, locator_type, locator, texto):

@@ -1,10 +1,6 @@
 import time
-
 from Mobile_Python.features.pages.base_page import BasePage
 
-
-# INICIO =
-# //android.view.View[@content-desc="Início"]
 
 class AppiumSettings(BasePage):
     BOTAO_CONFIGURACAO = "//android.widget.TextView[@content-desc='Configurar']"

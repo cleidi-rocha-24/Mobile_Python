@@ -22,7 +22,6 @@ class AppiumSettings(BasePage):
         time.sleep(8)
 
     def clicar_retorno_busca_appium_settings(self):
-        # time.sleep(6)
         self.espera("xpath", self.APPIUM_SETTINGS)
         self.clicar("xpath", self.APPIUM_SETTINGS)
 

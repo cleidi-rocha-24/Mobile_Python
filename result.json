@@ -1,0 +1,63 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Cen\u00e1rio",
+      "location": "Mobile_Python/features/appium_settings.feature:4",
+      "name": "Permitir acesso a localizacao do Appium Settings",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Dado",
+          "location": "Mobile_Python/features/appium_settings.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "Mobile_Python/features/steps/appium_settings_steps.py:5"
+          },
+          "name": "que eu navego para as permissoes de localizacao do Appium Settings",
+          "result": {
+            "duration": 25.1270010471344,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Quando",
+          "location": "Mobile_Python/features/appium_settings.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "Mobile_Python/features/steps/appium_settings_steps.py:13"
+          },
+          "name": "seleciono \"Permitir o tempo todo\"",
+          "result": {
+            "duration": 0.9285576343536377,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Ent\u00e3o",
+          "location": "Mobile_Python/features/appium_settings.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "Mobile_Python/features/steps/appium_settings_steps.py:18"
+          },
+          "name": "a permissao de localizacao deve estar marcada como \"Permitir o tempo todo\"",
+          "result": {
+            "duration": 1.7700276374816895,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Funcionalidade",
+  "location": "Mobile_Python/features/appium_settings.feature:2",
+  "name": "Permissao de localizacao do Appium Settings",
+  "status": "passed",
+  "tags": []
+}
+]

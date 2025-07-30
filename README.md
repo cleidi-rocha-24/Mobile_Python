@@ -32,12 +32,33 @@ Este projeto utiliza **Python**, **Behave**, **Appium** e **Allure Reports** par
   python -m venv .venv
 
 3. Ative o ambiente virtual:
+   
   Windows (PowerShell):
   .\.venv\Scripts\activate
   Linux/macOS:
   source .venv/bin/activate
 
-4. Instale as dependências:
+5. Instale as dependências:
+   
   pip install -r requirements.txt
+
+▶️ Executando os testes
+Após ativar o ambiente virtual, basta dar play no arquivo main.py na raiz do projeto (ou executá-lo via terminal):
+ 
+python main.py
+ 
+Esse arquivo é responsável por iniciar a suíte de testes.
+
+📊 Gerando o Allure Report
+
+Execute no terminal: 
+1. allure generate 
+2. allure open
+
+❗ Dicas
+
+Se estiver usando PyCharm, certifique-se de configurar o Python Interpreter para usar o .venv criado na pasta do projeto.
+Verifique se o Appium está rodando antes de iniciar os testes.
+Caso o comando allure não funcione, verifique se o diretório do Allure CLI está no seu PATH.
 
   

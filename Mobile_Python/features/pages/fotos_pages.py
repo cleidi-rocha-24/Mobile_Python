@@ -1,5 +1,5 @@
 import time
-from Mobile_Python.features.pages.base_page import BasePage
+from features.pages.base_page import BasePage
 
 
 class Fotos(BasePage):

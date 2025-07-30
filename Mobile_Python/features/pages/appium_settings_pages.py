@@ -1,5 +1,5 @@
 import time
-from Mobile_Python.features.pages.base_page import BasePage
+from features.pages.base_page import BasePage
 
 
 class AppiumSettings(BasePage):
@@ -18,7 +18,7 @@ class AppiumSettings(BasePage):
     def localizar_appium_settings(self):
         self.espera("ID", self.LUPA_PESQUISA)
         self.clicar("ID", self.LUPA_PESQUISA)
-        self.digitando_devagar("XPATH", self.CAMPO_PESQUISA, "sett")
+        self.digitando_devagar("XPATH", self.CAMPO_PESQUISA, "settings")
         time.sleep(8)
 
     def clicar_retorno_busca_appium_settings(self):

@@ -1,5 +1,5 @@
 from behave import given, when, then
-from Mobile_Python.features.pages.appium_settings_pages import AppiumSettings
+from features.pages.appium_settings_pages import AppiumSettings
 
 
 @given(u'que eu navego para as permissoes de localizacao do Appium Settings')

@@ -1,6 +1,6 @@
 from behave import given, when, then
 
-from Mobile_Python.features.pages.fotos_pages import Fotos
+from features.pages.fotos_pages import Fotos
 
 
 @given(u'que eu navego para as permissoes de localizacao de Fotos')
